@@ -13,6 +13,18 @@ $(document).ready(function() {
       method: "GET",
       success: function(datiRitorno){
       console.log(datiRitorno)
+
+      // stampare in pagina
+      
+      // $(".prova").text(datiRitorno.response[0].title)
+      // devo fare un ciclo for sull array
+        for(var i = 0; i < datiRitorno.response.length; i++) {
+          // console.log(datiRitorno.response[i])
+          $(".prova").text(datiRitorno.response[i].title)
+      // devo fare un ciclo for sull oggetto
+
+
+        };
       },
       error: function(){
         console.log("Errore");

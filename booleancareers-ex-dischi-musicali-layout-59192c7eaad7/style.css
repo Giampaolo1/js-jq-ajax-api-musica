@@ -10,6 +10,10 @@ body {
     min-height: 100vh;
 }
 
+div {
+  border: yellow solid;
+}
+
 .container {
     width: 1070px;
     height: 100%;
