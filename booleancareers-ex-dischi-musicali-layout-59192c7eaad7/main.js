@@ -15,12 +15,24 @@ $(document).ready(function() {
       console.log(datiRitorno)
 
       // stampare in pagina
-      
+
       // $(".prova").text(datiRitorno.response[0].title)
       // devo fare un ciclo for sull array
         for(var i = 0; i < datiRitorno.response.length; i++) {
           // console.log(datiRitorno.response[i])
-          $(".prova").text(datiRitorno.response[i].title)
+          // $(".prova").text(datiRitorno.response[i].title)
+          // $(".prova").text(datiRitorno.response[i].poster)
+
+          // $(".prova").text(
+          //   datiRitorno.response[i].poster + "<br>" +
+          //   $(".prova").text(datiRitorno.response[i].title)
+          // )
+
+          $(".prova").text(
+            datiRitorno.response[i].poster + "<br>" +
+            datiRitorno.response[i].title
+          )
+
       // devo fare un ciclo for sull oggetto
 
 
