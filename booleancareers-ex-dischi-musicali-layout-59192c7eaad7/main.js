@@ -28,9 +28,12 @@ $(document).ready(function() {
           //   $(".prova").text(datiRitorno.response[i].title)
           // )
 
-          $(".prova").text(
+          $(".prova").append(
             datiRitorno.response[i].poster + "<br>" +
-            datiRitorno.response[i].title
+            datiRitorno.response[i].author + "<br>" +
+            datiRitorno.response[i].genre + "<br>" +
+            datiRitorno.response[i].title + "<br>" +
+            datiRitorno.response[i].year + "<br>"
           )
 
       // devo fare un ciclo for sull oggetto
